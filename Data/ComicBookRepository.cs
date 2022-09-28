@@ -25,7 +25,7 @@ namespace ComicBookGallery.Data
 
             new ComicBook()
             {
-                Id= 2,
+                Id = 2,
                 SeriesTitle = "The Amazing Spider-Man",
                 IssueNumber = 657,
                 DescriptionHtml = "<p><strong>FF: THREE TIE-IN.</strong> Spider-Man visits the FF for a very private wake--just for family.</p>",
@@ -56,6 +56,11 @@ namespace ComicBookGallery.Data
                 Favorite = false
             }
         };
+
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
         public ComicBook GetComicBook(int id)
         {
             ComicBook comicBook = null;
